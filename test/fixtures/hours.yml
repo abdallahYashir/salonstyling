@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  active: false
+  time_start: 2018-03-04 18:11:40
+  time_end: 2018-03-04 18:11:40
+  day: one
+  business: one
+
+two:
+  active: false
+  time_start: 2018-03-04 18:11:40
+  time_end: 2018-03-04 18:11:40
+  day: two
+  business: two

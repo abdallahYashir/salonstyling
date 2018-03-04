@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :hours
   resources :days
   devise_for :users
   resources :services

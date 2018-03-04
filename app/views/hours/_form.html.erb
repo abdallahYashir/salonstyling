@@ -1,0 +1,42 @@
+<%= form_with(model: hour, local: true) do |form| %>
+  <% if hour.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(hour.errors.count, "error") %> prohibited this hour from being saved:</h2>
+
+      <ul>
+      <% hour.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :active %>
+    <%= form.check_box :active, id: :hour_active %>
+  </div>
+
+  <div class="field">
+    <%= form.label :time_start %>
+    <%= form.time_select :time_start, id: :hour_time_start %>
+  </div>
+
+  <div class="field">
+    <%= form.label :time_end %>
+    <%= form.time_select :time_end, id: :hour_time_end %>
+  </div>
+
+  <div class="field">
+    <%= form.label :day_id %>
+    <%= form.text_field :day_id, id: :hour_day_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :business_id %>
+    <%= form.text_field :business_id, id: :hour_business_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
