@@ -37,6 +37,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
+gem 'active_link_to'
 
 group :development, :test do
   gem 'sqlite3'
